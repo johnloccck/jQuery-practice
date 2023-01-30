@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+           $("#container").css("border", "1px solid black")
+            $("h1").css("border", "3px solid red");
+
+            $("#container").addClass("bigger-container")
+
+            $(".btn").on("click", bigger)
+
+            function bigger(){
+                 $("#container").addClass("height-change");
+            }
+
+            $(".moove").on("click",moove)
+
+            function moove(){
+                $("#container").css("margin-left", "120px")
+            }
+            
+
+        })
+    </script>
+    <style>
+        .bigger-container {
+            width: 50%;
+            background-color: lightblue;
+        }
+        .height-change{
+            height: 50%;
+            background-color: red;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+     <h1>Hello to jquery</h1>
+     <button class="btn">Change Div</button>
+     <button class="moove">Move
+     </button>
+    </div>
+</body>
+</html>
