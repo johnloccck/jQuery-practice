@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js">
+
+    </script>
+    <script>
+        $("document").ready(function(){
+            //adding colors and css
+            // var newText = $("<p>");
+            //     newText.append("<h1>i just replaced</h1>");
+    
+            //     $("#textBox").html(newText);
+    
+            // $("h1:last").css("border", "3px solid red");
+
+            //events
+        //   $("#textBox").on("click", whenMouseIsClicked);
+
+        //   $("#textBox").on("mouseleave", whenMouseLeaves);
+
+        //   function whenMouseIsClicked(){
+        //     $("#textBox").html("<h1>You Clicked Me</h1>");
+
+        //   }
+        //   function whenMouseLeaves(){
+        //     $("#textBox").html("<h1>Where are you going?</h1>");
+            
+        //   }
+        //hide-show
+        $("#show").on("click", function(){
+            $("#textBox").show()
+        })
+        $("#hide").on("click", function(){
+            $("#textBox").hide()
+        })
+ 
+
+        })
+    </script>
+    <style>
+        #textBox{
+            /* width:150px;
+            height:150px;
+            border: 1px solid black; */
+            display: none;
+         
+        }
+    </style>
+</head>
+<body>
+    <a href="#" id="show">Click here to show</a>
+    <a href="#" id="hide">Click here to hide</a>
+   <div id="textBox">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod hic asperiores nisi sint ullam officia nam debitis exercitationem quo eaque, eius optio laboriosam assumenda ut repudiandae sunt ipsam illum ducimus iste qui libero accusantium! Amet nihil qui temporibus adipisci sunt labore eum voluptatibus. Magnam hic aspernatur magni nesciunt molestias!
+    </div>
+    <script src="js/jquery.js">
+
+    </script>
+</body>
+</html>
